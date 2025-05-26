@@ -1,0 +1,83 @@
+# Professional Projects Portfolio
+
+Welcome to my professional project showcase!  
+I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passionate about VLSI Design, Embedded Systems, and IoT. This repository contains a curated list of my academic and independent projects.
+
+---
+
+## Table of Contents
+
+- [VLSI Projects](#vlsi-projects)
+- [IoT & Embedded Projects](#iot--embedded-projects)
+- [Tools & Skills](#tools--skills)
+- [About Me](#about-me)
+- [Contact](#contact)
+
+---
+
+## VLSI Projects
+
+### 1. 16-bit ALU using FPGA (Basys3 Board)
+- Designed a 16-bit ALU in Verilog to perform arithmetic and logic operations.
+- Simulated and tested using Xilinx Vivado on the Basys3 FPGA board.
+- Validated performance through real-time hardware testing.
+
+### 2. RISC-ISA Processor Design using Xilinx Vivado
+- Implemented a custom RISC-ISA architecture in Verilog.
+- Used Xilinx Vivado for simulation and synthesis.
+- Focused on efficient instruction execution and functional verification.
+
+### 3. Traffic Control System using FPGA (Nexys4DDR Board)
+- Developed a real-time traffic system using Finite State Machines (FSM).
+- Designed and simulated using Verilog HDL in Vivado.
+- Successfully tested on Nexys4DDR FPGA board.
+
+### 4. Electronic Voting Machine (EVM)
+- Designed a secure digital voting system using Verilog.
+- Enabled accurate vote casting and result display through simulation.
+
+### 5. Smart Car Parking System
+- Created a Verilog-based project for automated parking slot management and entry control.
+- Simulated and tested in Xilinx Vivado using FSM design methodology.
+
+### 6. Vending Machine Logic Design
+- Developed logic for product selection and transaction handling.
+- Modeled using FSMs and simulated in Vivado.
+
+### 8. Traffic Light Controller with Pedestrian Input
+- Built a sequential control system using FSM in Verilog.
+- Supported pedestrian input and tested for real-time signal handling.
+
+---
+## IoT & Embedded Projects
+
+### 1. Line Following Robot
+- Designed an autonomous navigation robot using IR sensors and motor drivers.
+
+### 2. Smart Door Lock System
+- Developed a smart locking system using solenoid lock, IR sensor, and microcontroller.
+
+---
+
+## Tools & Skills
+
+- **Languages**: Verilog HDL, C/C++, Python (Basic)
+- **EDA Tools**: Xilinx Vivado, ISE
+- **Platforms**: Arduino IDE, Arduino cloud, NodeMCU, FPGA (Basys3, Nexys4DDR)
+- **Other Tools**: MATLAB, IoT Sensors & Robotics
+
+---
+
+## About Me
+
+- *I'm currently pursuing my B.Tech in Electronics and Communication Engineering at RGUKT-Ongole.  
+- *I’m driven by a passion for digital systems, automation, and solving real-world problems through electronics.  
+- *This repository reflects my technical journey and skills in VLSI and embedded domains.
+
+---
+
+## Contact
+
+- **Email**: bhavanapuckakayala@gmail.com  
+- **LinkedIn**: [https://surl.li/cftmdh](https://surl.li/cftmdh)  
+- **GitHub**: [https://github.com/caprizz08](https://github.com/caprizz08)
