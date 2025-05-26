@@ -1,6 +1,7 @@
 # Professional Projects Portfolio
 
-![Portfolio Banner](https://img.freepik.com/free-vector/technology-banner-background-with-digital-circuit-board_1017-19366.jpg)
+![Portfolio Banner]![8852 jpg_wh860](https://github.com/user-attachments/assets/b6a5815c-c0e7-41c4-9f67-b0abc68fb3f9)
+
 Welcome to my professional project showcase!  
 I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passionate about VLSI Design, Embedded Systems, and IoT. This repository contains a curated list of my academic and personal projects,reflecting my technical journey and skills.
 
