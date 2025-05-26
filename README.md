@@ -70,9 +70,9 @@ I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passio
 
 ## About Me
 
-- *I'm currently pursuing my B.Tech in Electronics and Communication Engineering at RGUKT-Ongole.  
-- *I’m driven by a passion for digital systems, automation, and solving real-world problems through electronics.  
-- *This repository reflects my technical journey and skills in VLSI and embedded domains.
+- I'm currently pursuing my B.Tech in Electronics and Communication Engineering at RGUKT-Ongole.  
+- I’m driven by a passion for digital systems, automation, and solving real-world problems through electronics.  
+- This repository reflects my technical journey and skills in VLSI and embedded domains.
 
 ---
 
