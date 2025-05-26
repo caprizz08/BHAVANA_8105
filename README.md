@@ -1,7 +1,7 @@
 # Professional Projects Portfolio
 
 Welcome to my professional project showcase!  
-I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passionate about VLSI Design, Embedded Systems, and IoT. This repository contains a curated list of my academic and independent projects.
+I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passionate about VLSI Design, Embedded Systems, and IoT. This repository contains a curated list of my academic and personal projects.
 
 ---
 
@@ -44,6 +44,10 @@ I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passio
 - Developed logic for product selection and transaction handling.
 - Modeled using FSMs and simulated in Vivado.
 
+### 7. Low Pass FIR Filter Design
+- Created a Finite Impulse Response (FIR) filter in Verilog for signal processing.
+- Verified filter response through waveform analysis in Vivado.
+
 ### 8. Traffic Light Controller with Pedestrian Input
 - Built a sequential control system using FSM in Verilog.
 - Supported pedestrian input and tested for real-time signal handling.
@@ -73,6 +77,8 @@ I’m P. Venkata Lakshmi Bhavana, an ECE undergraduate from RGUKT-Ongole, passio
 - I'm currently pursuing my B.Tech in Electronics and Communication Engineering at RGUKT-Ongole.  
 - I’m driven by a passion for digital systems, automation, and solving real-world problems through electronics.  
 - This repository reflects my technical journey and skills in VLSI and embedded domains.
+- My career goal is to become a VLSI design engineer, contributing to innovative hardware solutions and collaborating with industry professionals.
+- I am actively seeking internship opportunities to gain hands-on experience and expand my professional network.
 
 ---
 
