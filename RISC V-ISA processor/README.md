@@ -72,6 +72,14 @@ This project focuses on the design and implementation of a *32-bit RISC-V (RV32I
 
 ---
 
+## Getting Started
+1. Clone the repository.
+2. Open the project in Xilinx Vivado.
+3. Run simulation and synthesis.
+4. Deploy the bitstream to the Basys3 board.
+
+---
+
 ## 📬 Contact
 *P. Venkata Lakshmi Bhavana*  
 ECE Undergraduate | RGUKT Ongole  
