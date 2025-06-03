@@ -54,10 +54,12 @@ This project implements a **Pulse Generator** in Verilog HDL that emits a period
 
 ## 📷 Output Waveform
 
-![Waveform1](waveform.png)
+![Waveform1](![Screenshot 2025-06-03 173117](https://github.com/user-attachments/assets/3831daec-47f6-4d21-96db-980c0048b2d8)
+)
 ![Waveform2](![pulse_gen_sir_wave 1](https://github.com/user-attachments/assets/b7ee84b7-3fd6-4544-9793-587391a0f667)
 )
-![Waveform3](waveform.png)
+![Waveform3](![Screenshot 2025-06-03 172839](https://github.com/user-attachments/assets/12b7954f-fe8a-4be3-942d-572e9b412076)
+)
 
 These waveforms confirm that the pulse starts synchronously after reset and matches the given duration and period parameters.
 
