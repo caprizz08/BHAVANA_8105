@@ -72,7 +72,7 @@ These waveforms confirm that the pulse starts synchronously after reset and matc
 ---
   ## 📂 Project Files
 
-- [pulse_gen_sir.v](pulse_gen_sir.v): Main Verilog module for the pulse generator
+- [pulse-gen_sir.v](pulse-gen_sir.v): Main Verilog module for the pulse generator
 - [pulse_gen_sir_tb.v](pulse_gen_sir_tb.v): Testbench for simulation
 ---
 
