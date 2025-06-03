@@ -1,0 +1,56 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: SURE TRUST
+// Engineer: P VENKATA LAKSHMI BHAVANA
+// 
+// Create Date: 02.06.2025 11:52:17
+// Design Name:PULSE GENERATOR 
+// Module Name: pulse_gen_sir_tb
+// Project Name: PULSE GENERATOR
+// Target Devices:FPGA BOARDS 
+// Tool Versions: 2024.2
+// Description: WE GENERATE PULSES USING CLOCK, RESET, AND TWO PARAMETERS(PULSE DURATION,PULSE PERIOD). IT IS USED IN DIGITAL SYSTEMS, DIGITAL CLOCKS.
+// 
+// Dependencies: NONE
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+module pulse_gen_sir_tb;
+    localparam tclk=10;
+    localparam PULSE_DURATION=5;
+    localparam PULSE_PERIOD=7;
+   //input signals to DUT 
+    reg clk;
+    reg reset;
+    //output signals to DUT
+    wire pulse;
+    //DUT INSTANTIATION
+    pulse_gen_sir#
+    ( 
+    .PULSE_DURATION(PULSE_DURATION),
+    .PULSE_PERIOD(PULSE_PERIOD)
+    )pulse_gen_inst(
+    .i_clk(clk),
+    .i_reset(reset),
+    .o_pulse(pulse)
+    );
+    
+    //initialize signals
+    initial begin 
+    clk<=1'b1;
+    reset<=1'b1;
+    end
+    
+    always #(tclk/2) clk<=~clk;
+    //how do we drive reset.
+    initial begin
+    @(posedge clk);
+    @(posedge clk);
+    @(posedge clk);
+    @(posedge clk);
+    reset<=1'b0;
+    end   
+endmodule
