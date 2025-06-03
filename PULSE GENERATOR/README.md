@@ -73,7 +73,10 @@ These waveforms confirm that the pulse starts synchronously after reset and matc
 - `pulse_gen_sir.v` — Verilog source code for the pulse generator
 - `pulse_gen_sir_tb.v` — Testbench file to simulate the pulse generator
 - `pulse_gen_sir.xpr` — Vivado project file (optional)
+  ## 📂 Project Files
 
+- [pulse_gen_sir.v](pulse_gen_sir.v): Main Verilog module
+- [pulse_gen_sir_tb.v](pulse_gen_sir_tb.v): Testbench for simulation
 ---
 
 ## 🚀 How to Run Simulation in Vivado
