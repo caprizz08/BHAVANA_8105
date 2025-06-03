@@ -2,8 +2,7 @@
 
 ## 📖 Overview
 
-This project implements a **Pulse Generator** in Verilog HDL that emits a periodic pulse with programmable HIGH and LOW durations. The pulse timing is fully configurable using two parameters: `PULSE_DURATION` and `PULSE_PERIOD`. This module is commonly used in digital systems for clock gating, timing signals, and control mechanisms.The design
- is targeted for simulation and synthesis in Xilinx Vivado.
+This project implements a **Pulse Generator** in Verilog HDL that emits a periodic pulse with programmable HIGH and LOW durations. The pulse timing is fully configurable using two parameters: `PULSE_DURATION` and `PULSE_PERIOD`. This module is commonly used in digital systems for clock gating, timing signals, and control mechanisms. The design is targeted for simulation and synthesis in Xilinx Vivado.
 
 ---
 
@@ -52,14 +51,11 @@ This project implements a **Pulse Generator** in Verilog HDL that emits a period
 
 ---
 
-## 📷 Output Waveform
+## 📷 Output Waveforms(1-3)
 
-![Waveform1](![Screenshot 2025-06-03 173117](https://github.com/user-attachments/assets/3831daec-47f6-4d21-96db-980c0048b2d8)
-)
-![Waveform2](![pulse_gen_sir_wave 1](https://github.com/user-attachments/assets/b7ee84b7-3fd6-4544-9793-587391a0f667)
-)
-![Waveform3](![Screenshot 2025-06-03 172839](https://github.com/user-attachments/assets/12b7954f-fe8a-4be3-942d-572e9b412076)
-)
+![Waveform1](https://github.com/user-attachments/assets/3831daec-47f6-4d21-96db-980c0048b2d8)
+![Waveform2](https://github.com/user-attachments/assets/b7ee84b7-3fd6-4544-9793-587391a0f667)
+![Waveform3](https://github.com/user-attachments/assets/12b7954f-fe8a-4be3-942d-572e9b412076)
 
 These waveforms confirm that the pulse starts synchronously after reset and matches the given duration and period parameters.
 
@@ -70,18 +66,17 @@ These waveforms confirm that the pulse starts synchronously after reset and matc
 - Basic knowledge of Vivado IDE and HDL simulation
 
 ---
-  ## 📂 Project Files
+ ## 📂 Project Files
 
-- [Pulse Generator File - pulse-gen_sir](https://github.com/caprizz08/BHAVANA_8105/blob/main/PULSE%20GENERATOR/pulse-gen_sir): Main Verilog module for the pulse generator
-- [Pulse Generator File - pulse_gen_sir_tb](https://github.com/caprizz08/BHAVANA_8105/blob/04dde9301b9ee86ea4ca764a6b74308b12a9142b/PULSE%20GENERATOR/pulse_gen_sir_tb)- used for simulation of pulse generator.
+- [Pulse Generator File - pulse-gen_sir.v](https://github.com/caprizz08/BHAVANA_8105/blob/main/PULSE%20GENERATOR/pulse-gen_sir): Main Verilog module for the pulse generator.
+- [Pulse Generator Testbench - pulse_gen_sir_tb.v](https://github.com/caprizz08/BHAVANA_8105/blob/04dde9301b9ee86ea4ca764a6b74308b12a9142b/PULSE%20GENERATOR/pulse_gen_sir_tb): Testbench used for simulation and verification of the pulse generator.
+
 ---
-
 ## 🚀 How to Run Simulation in Vivado
-
 ### Step 1: Open Vivado and Create/Open the Project
 - Launch Vivado.
 - Create a new project or open the existing `pulse_gen_sir.xpr` project.
-- Add the source files (`pulse_gen_sir.v` and `pulse_gen_sir_tb.v`) to the project.
+- Add the source files (`pulse-gen_sir.v` and `pulse_gen_sir_tb.v`) to the project.
 
 ### Step 2: Set the Simulation Top Module
 - In the Vivado Flow Navigator, under **Simulation**, click on **Run Simulation** > **Run Behavioral Simulation**.
