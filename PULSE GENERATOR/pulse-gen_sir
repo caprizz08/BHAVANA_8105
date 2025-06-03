@@ -1,0 +1,72 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company:SURE TRUST
+// Engineer: P VENKATA LAKSHMI BHAVANA
+// 
+// Create Date: 03.06.2025 11:29:55
+// Design Name:pulse generator  
+// Module Name: pulse_gen_sir
+// Project Name:pulse generator  
+// Target Devices:FPGA BOARD 
+// Tool Versions: 2024.2
+// Description: it generates pulses in according with the applied clock pulses and reset and also two parameters(DURATION,PERIOD).
+// 
+// Dependencies: NONE
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module pulse_gen_sir#
+    ( parameter PULSE_DURATION=5,
+      parameter PULSE_PERIOD=7)
+    (
+    //INPUT ports
+    input i_clk,
+    input i_reset,
+    //OUTPUT PORTS
+    output o_pulse
+    );
+    
+        reg pulse;
+        reg [(PULSE_PERIOD)-1:0] pulse_counter;
+        //DECLARATION OF SIGNALS
+        /*
+            The control on Pulse period and duration is through a 7_bit counter
+            since, the maximum pulse period is 100clks
+            
+            counter counts from 0-PULSE_PERIOD-1
+            The pulse is high when 0<=counter<PULSE_DURATION
+            or,The pulse is high when 0<=counter<=PULSE_DURATION-1
+        */
+        always @ (posedge i_clk) begin
+            if (i_reset)
+            begin
+                pulse_counter <= 1'b0;
+            end
+            else
+            begin
+                if(pulse_counter == PULSE_PERIOD-1) begin
+                    pulse_counter <= 7'b0;
+                end else begin
+                pulse_counter <= pulse_counter + 7'b1;
+                end
+            end
+        end
+        
+        always @ (posedge i_clk) begin
+            if (i_reset) begin
+                pulse <= 1'b0;
+            end else begin
+                if (pulse_counter >=7'b0 && pulse_counter <= PULSE_DURATION-1) begin
+                    pulse <=1'b1;
+                end else begin
+                    pulse <= 1'b0;
+                end
+            end
+        end
+        
+        assign o_pulse = pulse;
+endmodule
