@@ -51,7 +51,7 @@ This project implements a **Pulse Generator** in Verilog HDL that emits a period
 
 ---
 
-## 📷 Output Waveforms(1-3)
+## 📷 Output Waveforms(Test cases 1-3)
 
 ![Waveform1](https://github.com/user-attachments/assets/3831daec-47f6-4d21-96db-980c0048b2d8)
 ![Waveform2](https://github.com/user-attachments/assets/b7ee84b7-3fd6-4544-9793-587391a0f667)
@@ -64,6 +64,23 @@ These waveforms confirm that the pulse starts synchronously after reset and matc
  ## Prerequisites
 - Xilinx Vivado Design Suite installed (Version 2024.2 or later recommended)
 - Basic knowledge of Vivado IDE and HDL simulation
+
+- ### Minimum System Requirements:
+1. *Operating System*:
+   - *Windows*:
+     - Windows 10 or later (64-bit versions only).
+   - *Linux*:
+     - CentOS/RHEL 7.6 or later (64-bit).
+     - Ubuntu 18.04 or later (64-bit).
+2. *Processor*:
+   - Minimum: Quad-core processor.
+   - Recommended: Intel i7 or AMD Ryzen equivalent (multi-core).
+3. *RAM*:
+   - Minimum: 8 GB.
+   - Recommended: 16 GB or higher for large projects and smoother performance.
+4. *Disk Space*:
+   - Minimum: 50 GB free space.
+   - Recommended: 100 GB free space to accommodate project files, temporary files, and additional libraries.
 
 ---
  ## 📂 Project Files
