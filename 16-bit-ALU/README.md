@@ -77,8 +77,8 @@ Simulations are run using the Vivado simulator.
 
 ### 🖼️ Simulation Waveforms
 
-![ALU MODE schematic](16-bit-ALU/ALU_MODE_schematic.png)  
-![ALU mode simulation](16-bit-ALU/ALU_mode_simulation.png)
+![ALU MODE schematic](https://github.com/caprizz08/BHAVANA_8105/blob/main/16-bit-ALU/ALU_MODE_schematic.png)  
+![ALU mode simulation](https://github.com/caprizz08/BHAVANA_8105/blob/main/16-bit-ALU/ALU_mode_simulation.png)
 
 ---
 
