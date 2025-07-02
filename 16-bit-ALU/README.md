@@ -73,7 +73,7 @@ Simulations were run using Vivado simulator.
      
 ## 📂 Project Files
 
-- [16-bit ALU File- ALU_16OUT.v](https://github.com/caprizz08/BHAVANA_8105/blob/main/PULSE%20GENERATOR/pulse-gen_sir): Main Verilog module for the ALU.
+- [16-bit ALU File- ALU_16OUT.v](16-bit-ALU/ALU_16OUT.v): Main Verilog module for the ALU.
 - [16-bit ALU Testbench - ALU_16OUT_tb.v](https://github.com/caprizz08/BHAVANA_8105/blob/04dde9301b9ee86ea4ca764a6b74308b12a9142b/PULSE%20GENERATOR/pulse_gen_sir_tb): Testbench used for simulation and verification of the ALU.
 
 ---
