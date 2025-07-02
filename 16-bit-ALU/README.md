@@ -79,8 +79,8 @@ Simulations were run using Vivado simulator.
 ---
 ### Simulation Waveforms
 
-![ALU with MODE Waveform](16-bit-ALU/images/add_waveform.png)
-![ALU with MODE schematic diagram](16-bit-ALU/images/sub_waveform.png)
+![ALU MODE schematic](16-bit-ALU/ALU_MODE_schematic.png)
+![ALU mode simulation](16-bit-ALU/ALU_mode_simulation.png)
 
 ---
 
