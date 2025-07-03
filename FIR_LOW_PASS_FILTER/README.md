@@ -48,10 +48,10 @@ This project implements a **9-tap Finite Impulse Response (FIR) Low Pass Filter*
 - Sine 2 MHz and 30 MHz outputs (from `sincos.v`) 🌐
 - Noisy signal (sum)
 - Filtered output (from `FIR.v`)
-- ![FIR_SIMULATION](../LOW_PASS_FIR_FILTER/FIR_SIMULATION.png)
-- ![FIR_SIMULATION_1](../LOW_PASS_FIR_FILTER/FIR_SIMULATION_1.png)
-- ![FIR_SCHEMMATIC](../LOW_PASS_FIR_FILTER/FIR_SCHEMMATIC.png)
-- ![FIR_ELABORATED](../LOW_PASS_FIR_FILTER/FIR_ELABORATED.png)
+- ![FIR_SIMULATION](../FIR_LOW_PASS_FILTER/FIR_SIMULATION.png)
+- ![FIR_SIMULATION_1](../FIR_LOW_PASS_FILTER/FIR_SIMULATION_1.png)
+- ![FIR_SCHEMMATIC](../FIR_LOW_PASS_FILTER/FIR_SCHEMMATIC.png)
+- ![FIR_ELABORATED](../FIR_LOW_PASS_FILTER/FIR_ELABORATED.png)
 
 ## ▶️ How to Run
 
