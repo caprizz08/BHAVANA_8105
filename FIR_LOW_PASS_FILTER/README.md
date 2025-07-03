@@ -1,151 +1,95 @@
-# Digital FIR Low Pass Filter
-Building a 9-tap Finite Impulse Response (FIR) lowpass filter.
-## Overview
-This project implements a Digital Low Pass FIR (Finite Impulse Response) Filter using Verilog HDL. The design includes modules for the FIR filter and CORDIC-based sine/cosine signal generation, along with their testbenches, aimed at simulation and verification of filter response.
+# 🎛️ Digital FIR Low Pass Filter
 
-## Functional Description
-- The `FIR` module receives a digital input (e.g., a sinusoidal signal) and filters out frequencies above the designed cut-off.
-- The `sincos.v` module generates sine and cosine waveforms, serving as test signals for the filter.
-- Testbenches (`FIR_tb.v` and `sincos_tb.v`) provide automated simulation scenarios and stimulus, checking for expected outputs.
+This project implements a **9-tap Finite Impulse Response (FIR) Low Pass Filter** in Verilog HDL. It also features a 🌀 CORDIC-based sine/cosine signal generator for testing, with comprehensive testbenches and simulation waveforms.
 
+## 📝 Overview
 
+- **Filter Type:** 9-tap FIR lowpass filter  
+- **Purpose:** Attenuates high-frequency components from digital signals  
+- **Target Cutoff Frequency:** ~10 MHz (Sampling Clock: 100 MHz)  
+- **Test Signals:** Sine waves at 2 MHz and 30 MHz (generated using CORDIC)
 
-- 📌 Target cutoff frequency: ~10MHz.
-  💡 Sampling clock frequency: 100MHz.
+## 🔍 Functional Description
 
-## 1. Project Overview
-- 📊 Filter type: 9-tap FIR lowpass filter.
-- 🎯 Implemented in: Verilog.
-- 🔄 Purpose: Attenuate high-frequency components.
+- The FIR filter module (`FIR.v`) processes digital input signals and removes frequencies above the cutoff.
+- The `sincos.v` module generates test sine and cosine waveforms.
+- Testbenches (`FIR_tb.v`, `sincos_tb.v`) automate simulation and verification.
 
-## 2. Filter Implementation
-- 📈 Synthesizing two sine waves for testing.
-- 📉 First sine wave frequency: 2MHz.
-- 📊 Second sine wave frequency: 30MHz.
+## ⚙️ Implementation & Testing
 
-## 3. Testbench Design
-- ➕ Addition of the two sine waves to create a "noisy" signal.
-- 🔄 Resampling of the noisy signal at 100MHz.
-- 🔌 Feeding the resampled noisy signal into the FIR lowpass filter.
+1. **Signal Generation:**  
+   - Two sine waves at 2 MHz and 30 MHz are generated and summed to create a noisy test signal. 🎶
+   - The noisy signal is resampled at 100 MHz and fed into the FIR filter.
 
-## 4. Signal Generation
-- 📉 Attenuation of the 30MHz component of the noisy signal.
-- ✅ Preservation of the 2MHz component of the noisy signal.
-- 🎯 Demonstration of lowpass filtering effectiveness.
+2. **Filter Output:**  
+   - The 30 MHz component is attenuated, while the 2 MHz component passes through. ✅
 
-## 5. Expected Filter Behavior
-- 🌊 Top two analog waveforms: Individual 2MHz and 30MHz sine waves.
-- 🔵 Third noisy signal (cyan): Sum of the two sine waves, resampled at 100MHz.
-- 🟣 Fourth filtered signal (magenta): Output from the FIR lowpass filter.
+3. **Expected Results:**  
+   - Top two waveforms: 2 MHz and 30 MHz sines. 🌊
+   - Third waveform: Noisy (sum) signal. 🔊
+   - Fourth waveform: FIR filter output (only 2 MHz component remains). 🎯
 
-## 6. Visual Representation of Signals
-- 📉 Clear attenuation of the 30MHz component.
-- ✅ Unchanged 2MHz component, confirming lowpass action.
-- 📊 Visual confirmation of filter performance.
+## 🛠️ Tools & Technologies
 
-## 7. Tools Used
-- #️⃣ FPGA: Field-Programmable Gate Array.
-- #️⃣ Xilinx Vivado (for CORDIC IP/core generation/Modules/Testbench)
-- #️⃣ Verilog: Hardware description language.
-
-## 8. Key Technologies
-- #️⃣ DSP: Digital Signal Processing.
-- #️⃣ Impulse Response: Characteristic of FIR filters.
-- #️⃣ Simulation: Testing filter behavior before hardware implementation.
-
-## Objectives
-- Develop a Verilog-based FIR low pass filter.
-- Generate sine and cosine test signals using the CORDIC algorithm (via IP or direct Verilog).
-- Simulate and verify the filter’s frequency response to sinusoidal inputs.
-
-## Features
-- Parameterized FIR filter module.
-- Sine and cosine signal generation using CORDIC approach (`sincos.v`).
-- Comprehensive testbenches for both FIR filter and CORDIC generator.
-- Ready for simulation in standard HDL tools.
-
-## Architecture
-## Simulation and Testing
-- Run `sincos_tb.v` to verify output waveforms from the CORDIC generator.
-- Run `FIR_tb.v` with sine/cosine signals as input to verify filtering action.
-- Use waveform viewers to inspect output quality, frequency response, and attenuation.
-
-## Outcomes
-- Functional and verified digital FIR low pass filter.
-- Accurate sine/cosine signal generation for test and measurement.
-- Simulation waveforms demonstrating filter performance.
-  
-## 📝 Prerequisites
-- [Xilinx Vivado Design Suite](https://www.xilinx.com/products/design-tools/vivado.html) installed (version 2022.2 or later recommended)
-- Basic knowledge of Vivado IDE and HDL simulation
-
-### Minimum System Requirements
-1. **Operating System:**
-   - **Windows:** Windows 10 or later (64-bit)
-   - **Linux:** CentOS/RHEL 7.6 or later, Ubuntu 18.04 or later (64-bit)
-2. **Processor:**
-   - Minimum: Quad-core processor
-   - Recommended: Intel i7 or AMD Ryzen equivalent (multi-core)
-3. **RAM:**
-   - Minimum: 8 GB
-   - Recommended: 16 GB or higher for large projects
-4. **Disk Space:**
-   - Minimum: 50 GB free
-   - Recommended: 100 GB free
+- Xilinx Vivado Design Suite (recommended version: 2022.2 or later) 🖥️
+- Verilog HDL 💾
+- CORDIC IP/core for signal generation
+- Simulation waveform viewers (Vivado or ModelSim) 📈
 
 ## 📂 Project Files
 
-- [`FIR.v`](https://github.com/caprizz08/BHAVANA_8105/blob/main/FIR_LOW_PASS_FILTER/FIR.v): Main Verilog module for the FIR filter.
-- [`FIR_tb.v`](https://github.com/caprizz08/BHAVANA_8105/blob/main/FIR_LOW_PASS_FILTER/FIR_tb.v): Testbench for simulation and verification.
-- [`sincos.v`](https://github.com/caprizz08/BHAVANA_8105/blob/main/FIR_LOW_PASS_FILTER/sincos.v): Main Verilog module for the sincos signal generator.
-- [`sincos_tb.v`](https://github.com/caprizz08/BHAVANA_8105/blob/main/FIR_LOW_PASS_FILTER/sincos_tb.v): Testbench for simulation and verification of sincos.
+- `FIR.v`: FIR filter module
+- `FIR_tb.v`: FIR filter testbench
+- `sincos.v`: Sine/cosine generator (CORDIC-based)
+- `sincos_tb.v`: Testbench for sine/cosine generator
 
----
+## 📊 Simulation Waveforms
 
-### 🖼️ Simulation Waveforms
-- Expected: 
-  - Sine 2MHz and sine 30MHz outputs (from `sincos.v`)
-  - Noisy signal(Sine 2MHz + sine 30MHz).
-  - Filtered output signal (from `FIR.v`)
-- Use Vivado or ModelSim waveform viewer to analyze and capture results.
-![FIR_SIMULATION](https://github.com/caprizz08/BHAVANA_8105/blob/main/LOW_PASS_FIR_FILTER/FIR_SIMULATION.png)  
-![FIR_SIMULATION_1](https://github.com/caprizz08/BHAVANA_8105/blob/main/LOW_PASS_FIR_FILTER/FIR_SIMULATION_1.png)
-![FIR_SCHEMMATIC](https://github.com/caprizz08/BHAVANA_8105/blob/main/LOW_PASS_FIR_FILTER/FIR_SCHEMMATIC.png)  
-![FIR_ELABORATED](https://github.com/caprizz08/BHAVANA_8105/blob/main/LOW_PASS_FIR_FILTER/FIR_ELABORATED.png)
+- Sine 2 MHz and 30 MHz outputs (from `sincos.v`) 🌐
+- Noisy signal (sum)
+- Filtered output (from `FIR.v`)
+- ![FIR_SIMULATION](../LOW_PASS_FIR_FILTER/FIR_SIMULATION.png)
+- ![FIR_SIMULATION_1](../LOW_PASS_FIR_FILTER/FIR_SIMULATION_1.png)
+- ![FIR_SCHEMMATIC](../LOW_PASS_FIR_FILTER/FIR_SCHEMMATIC.png)
+- ![FIR_ELABORATED](../LOW_PASS_FIR_FILTER/FIR_ELABORATED.png)
 
----
+## ▶️ How to Run
 
-## How to Run
-1.  Generate and integrate CORDIC IP core for `sincos.v` using Xilinx Vivado.
-2. Compile all Verilog files in your preferred simulator.
-3. Run `sincos_tb.v` to verify waveform generation.
-4. Run `FIR_tb.v` to simulate the filter response to test signals.
-5. View results using the simulator’s waveform viewer.
+1. Generate and integrate the CORDIC IP core for `sincos.v` in Vivado.
+2. Compile all Verilog files in your simulator.
+3. Simulate `sincos_tb.v` to verify waveform generation.
+4. Simulate `FIR_tb.v` to test filter response.
+5. Analyze results in your simulator’s waveform viewer. 👀
 
-## Additional Notes
-- Ensure that all module and signal names match between main modules and testbenches.
-- Modify filter coefficients in `FIR.v` as needed for your application.
-- For hardware realization, add appropriate constraints and top-level integration.
+## 💻 Prerequisites
 
-## Future Scope
-- Implementation on FPGA (hardware testing and measurement).
-- Extension to adaptive or multi-band FIR filters.
-- Real-time audio/signal processing use cases.
-- GUI for dynamic filter coefficient updates.
+- Xilinx Vivado Design Suite (2022.2+)
+- Operating System: Windows 10+ (64-bit) / Linux (CentOS/RHEL 7.6+, Ubuntu 18.04+)
+- Processor: Quad-core minimum (i7/Ryzen recommended) 🧠
+- RAM: 8 GB minimum (16 GB+ recommended) 🪫
+- Disk Space: 50–100 GB free 💾
+
+## 🛠️ Customization & Notes
+
+- Adjust filter coefficients in `FIR.v` for your application. 🔧
+- Ensure module and signal names match between sources and testbenches.
+- For hardware implementation, add appropriate constraints and integration.
+
+## 🚀 Future Scope
+
+- FPGA hardware testing and measurement
+- Adaptive/multi-band FIR filters
+- Real-time signal processing applications
+- GUI for dynamic coefficient updates
 
 ## 📬 Contact
-For queries or collaboration, please open an issue or contact the repository owner:  
-**P. Venkata Lakshmi Bhavana, ECE Undergraduate, IIIT Ongole.**
 
+For questions or collaboration, open an issue or contact:  
+**P. Venkata Lakshmi Bhavana, ECE Undergraduate, IIIT Ongole**  
 [![Email](https://img.shields.io/badge/Email-bhavanapuckakayala@gmail.com-blue?logo=gmail&logoColor=white)](mailto:bhavanapuckakayala@gmail.com)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-View_Profile-blue?logo=linkedin)](https://surl.li/cftmdh)  
 [![GitHub](https://img.shields.io/badge/GitHub-caprizz08-181717?logo=github)](https://github.com/caprizz08)
 
----
+## 📝 License
 
-## 📄 License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) – feel free to use, modify, and distribute.  
-Let me know if you'd like a version customized for a specific simulation tool (like Vivado or ModelSim), or if you’d like to add GitHub badges and a license section.
-
----
-
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) – feel free to use, modify, and distribute. 🎉
