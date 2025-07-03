@@ -148,3 +148,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 Let me know if you'd like a version customized for a specific simulation tool (like Vivado or ModelSim), or if you’d like to add GitHub badges and a license section.
 
 ---
+
