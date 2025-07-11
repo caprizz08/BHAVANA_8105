@@ -1,6 +1,6 @@
 # RAM SYSTEM DESIGN 🚀
 
-### 🔧 Project Title: `ram_system_design`
+### 🔧 Project Title: `RAM_SYSTEM_DESIGN`
 
 ### 🏢 Organization: SURE ProEd  
 ### 👨‍💻 Engineer: P. VENKATA LAKSHMI BHAVANA 
@@ -22,19 +22,18 @@ The core components include:
 
 ## 🧩 Block Diagram
 
-![Block Diagram](https://github.com/obulsai/ram_system_design/blob/03c229263a367a4308a84fdf593c9a381e4834d2/block_diagram/block_diagram.png)
-
+![Block Diagram](https://github.com/caprizz08/BHAVANA_8105/blob/main/RAM_SYSTEM_DESIGN/RAM_block_diagram.jpeg)
 ---
 
 ## 🔧 RTL Architecture
 
-![RTL Design](https://github.com/obulsai/ram_system_design/blob/e6b0fb37a7324e68e7fa48e721ac7e1419833f04/RTL_design/Sim1.png)
+![SCHEMATIC](https://github.com/caprizz08/BHAVANA_8105/blob/main/RAM_SYSTEM_DESIGN/schematic_diagram/SCHEMATIC.png)
 
 ---
 
 ## 🖥️ Simulation Result
 
-![Simulation Output](https://github.com/obulsai/ram_system_design/blob/343fd6488ed3c9a5f75c835c846ec86181180b54/simulation_1/Sim1.png)
+![Simulation Output](https://github.com/caprizz08/BHAVANA_8105/blob/main/RAM_SYSTEM_DESIGN/simulation/RAM_SIM.png)
 
 ---
 
