@@ -27,7 +27,7 @@ The core components include:
 
 ## 🔧 RTL Architecture
 
-![SCHEMATIC](https://github.com/caprizz08/BHAVANA_8105/blob/main/RAM_SYSTEM_DESIGN/schematic_diagram/SCHEMATIC.png)
+![schematic](https://github.com/caprizz08/BHAVANA_8105/blob/main/RAM_SYSTEM_DESIGN/schematic_diagram/RAM_SCHEMATIC.png)
 
 ---
 
